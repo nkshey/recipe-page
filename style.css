@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Outfit", sans-serif;
+   line-height: 1.4;
+}
+
+:root {
+   /* PRIMARY */
+   --nutmeg: hsl(14, 45%, 36%);
+   --dark-raspberry: hsl(332, 51%, 32%);
+
+   /* NEUTRAL */
+   --white: hsl(0, 0%, 100%);
+   --rose-white: hsl(330, 100%, 98%);
+   --eggshell: hsl(30, 54%, 90%);
+   --light-gray: hsl(30, 18%, 87%);
+   --wenge-brown: hsl(30, 10%, 34%);
+   --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.6rem;
+   color: var(--wenge-brown);
+}
+
+main {
+   background-color: var(--white);
+}
+
+img {
+   width: 100%;
+}
+
+.info-wrapper {
+   padding: 3.8rem 3rem;
+}
+
+h1,
+h2 {
+   font-family: "Young Serif", sans-serif;
+   font-weight: 400;
+}
+
+h2 {
+   font-size: 2.75rem;
+}
+
+h2,
+.section-ingredients li span {
+   color: var(--nutmeg);
+}
+
+hr {
+   height: 0.1rem;
+   background-color: var(--light-gray);
+   border: none;
+   margin: 3.2rem 0;
+}
+
+.section-preparation li,
+.section-ingredients li {
+   display: flex;
+   align-items: center;
+   list-style: none;
+
+   gap: 2.6rem;
+}
+
+.section-preparation li span,
+.section-ingredients li span {
+   font-size: 2.2rem;
+}
+
+/* About section */
+.section-about h1 {
+   color: var(--dark-charcoal);
+   line-height: 1;
+   font-size: 3.8rem;
+   margin-bottom: 2.6rem;
+}
+
+.section-about p {
+   margin-bottom: 3.4rem;
+}
+
+/* Preparation section */
+.section-preparation {
+   background-color: var(--rose-white);
+   padding: 2.2rem;
+   border-radius: 0.8rem;
+
+   margin-bottom: 2.6rem;
+}
+
+.section-preparation h3 {
+   font-size: 1.9rem;
+   color: var(--dark-raspberry);
+   margin-bottom: 1.4rem;
+}
+
+.section-preparation ul {
+   padding: 0 0.7rem;
+}
+
+.section-preparation li {
+   margin-bottom: 0.6rem;
+}
+
+.section-preparation li span {
+   color: var(--dark-raspberry);
+}
+
+/* Ingredients section */
+.section-ingredients li {
+   margin-left: 0.8rem;
+}
+
+.section-ingredients h2 {
+   margin-bottom: 1.4rem;
+}
+
+/* Instructions section */
+.section-instructions h2 {
+   margin-bottom: 1.8rem;
+}
+
+.section-instructions li {
+   margin-bottom: 0.8rem;
+   margin-left: 2.6rem;
+   padding-left: 1.6rem;
+}
+
+.section-instructions li::marker {
+   font-weight: 700;
+   color: var(--nutmeg);
+}
+
+/* Nutrition section */
+.section-nutrition h2 {
+   margin-bottom: 1.8rem;
+}
+
+.section-nutrition > p {
+   margin-bottom: 2.4rem;
+}
+
+.table span p {
+   width: 1rem;
+}
+
+.table span {
+   display: flex;
+   gap: 51%;
+   padding: 0 3.2rem;
+}
+
+.table .nutrition-value {
+   color: var(--nutmeg);
+   font-weight: 700;
+}
+
+.table hr {
+   margin: 1.1rem 0;
+}
+
+/* Making it responsive for even smaller devices */
+@media (max-width: 345px) {
+   html {
+      font-size: 50%;
+   }
+}
+
+/* Making it responsive for Desktop devices */
+@media (min-width: 1024px) {
+   body {
+      background-color: var(--eggshell);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14rem 0;
+   }
+
+   img {
+      width: 100%;
+   }
+
+   main {
+      width: 72rem;
+      border-radius: 2.4rem;
+   }
+
+   .section-about h1 {
+      font-size: 4.1rem;
+   }
+
+   .section-image {
+      padding: 4rem;
+      padding-bottom: 0;
+   }
+
+   .section-image img {
+      border-radius: 1.2rem;
+   }
+
+   .info-wrapper {
+      padding: 3.6rem 4rem;
+   }
+
+   hr {
+      margin: 2.8rem 0;
+   }
+}
