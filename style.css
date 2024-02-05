@@ -85,7 +85,7 @@ hr {
 .section-about h1 {
    color: var(--dark-charcoal);
    line-height: 1;
-   font-size: 3.8rem;
+   font-size: 3.6rem;
    margin-bottom: 2.6rem;
 }
 
@@ -174,7 +174,7 @@ hr {
 }
 
 /* Making it responsive for even smaller devices */
-@media (max-width: 345px) {
+@media (max-width: 348px) {
    html {
       font-size: 50%;
    }
@@ -200,7 +200,7 @@ hr {
    }
 
    .section-about h1 {
-      font-size: 4.1rem;
+      font-size: 3.8rem;
    }
 
    .section-image {
